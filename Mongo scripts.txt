@@ -1,0 +1,30 @@
+use reactDB
+db.createCollection("jobs")
+
+db.jobs.insert([
+   {
+      job_title: 'Spec-System Dev',
+      job_id: 489375,
+      band: '8v',
+      recruiter: 'John Doe',
+      dateCreated: new Date("2018-07-03"),
+      appl_date: new Date("2018-07-10"),      
+      tags: ['mongodb', 'database', 'NoSQL', 'java'],
+      location: 'Chennai',
+      description: 'Must have 3+ years of experience.
+Solid experience with MongoDB or other NoSQL databases.'
+   },
+	
+   {
+      job_title: 'Analyst-System Dev',
+      job_id: 489000,
+      band: '7v',
+      recruiter: 'Jane Doe',
+      dateCreated: new Date("2018-07-01"),
+      appl_date: new Date("2018-07-15"),      
+      tags: ['oracle', 'database', 'rdbms', 'java'],
+      location: 'Chennai',
+      description: 'Must have 3+ years of experience.
+Solid experience with oracle or other rdbms.'
+   }
+])
